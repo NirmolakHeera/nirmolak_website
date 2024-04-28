@@ -11,27 +11,24 @@ html{
     scroll-behavior: smooth;;
 }
 body{
-    background: #71909A;
-    color: #E6F4F1; 
+    background: #E6F4F1;
+    color: #33465A; 
 }
 #header{
     width: 100%;
-    height: 140vh;
-    background-image: url("images/nirmolak-header.png");
-    background-position: center;
-    background-size: contain; /* This will make the image fit within the header, showing the whole image */
-    background-repeat: no-repeat;
-    /* margin-bottom: -250px; */
-}
-.container{
-    padding: 10px 5%;
+    background: linear-gradient(to right, #33465A 0%, #33465A 56.1%, #E6F4F1 56.1%, #E6F4F1 100%);
+    margin-bottom: 50px;
 }
 
 nav {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     flex-wrap: wrap;
+    background: linear-gradient(to right, #E6F4F1 0%, #E6F4F1 56.1%, #33465A 56.1%, #33465A 100%);
+    width: 100%;
+    height: 75px;
+    padding: 0px 2%;
+    align-items: center;
+    justify-content: center;
 }
 
 .logo {
@@ -41,10 +38,11 @@ nav ul li{
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
+    text-align: center;
 }
 
 nav ul li a{
-    color: #fff;
+    color: #71909A;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -66,8 +64,10 @@ nav ul li a:hover::after{
 
 }
 .header-text{
-    margin-top: 20%;
+    margin-top: 5%;
     font-size: 30px; 
+    align-items: center;
+    justify-content: center;
 }
 .header-text h1{
     font-size: 60px;
@@ -77,18 +77,34 @@ nav ul li a:hover::after{
     color: #F99136;
 }
 
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    padding-top: 5px;
+    margin: auto;
+}
+
+/* Rounded border */
+hr.rounded {
+    border-top: 5px solid #71909A;
+    border-radius: 5px;
+    margin: 10px;
+  }
 
 
 /* -------------------------------features------------------------------- */
 
 #features { 
-
+    padding: 0px 2%;
+    align-items: center; /* Centers children vertically in the container */
+    justify-content: center;
 }
 .sub-title {
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 600;
-    color: #E6F4F1;
+    color: #33465A;
     margin-top: 0;
+    text-align: center;
 }
 .services-list {
     display: grid;
@@ -110,10 +126,22 @@ nav ul li a:hover::after{
     height: 100%; /* Ensures the video can scale up to the full height of the container */
     object-fit: contain; /* Ensures the entire video is visible, scaled to fit within the container */
 }
+/* -----------------------------Privacy Policy-------------------------- */
+
+#privacy-policy{
+    padding: 50px 2%;
+    text-align: center;
+}
 
 /* -----------------------------contact-------------------------- */
+#contact{
+    justify-content: center;
+    align-items: center;
+}
 .contact-left{
     flex-basis: 35%;
+    padding: 0px 2%; 
+    text-align: center;
 }
 
 
@@ -121,18 +149,19 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #F99136;
+    color: #33465A;
     margin-right: 15px;
     font-size: 25px;
 }
 .social-icons{
     margin-top: 30px;
+
 }
 .social-icons a{
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
-    color: #ababab;
+    color: #33465A;
     display: inline-block;
     transition: transform 0.5s;
 }
