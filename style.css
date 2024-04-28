@@ -1,0 +1,214 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', 'sans-serif';
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;;
+}
+body{
+    background: #71909A;
+    color: #E6F4F1; 
+}
+#header{
+    width: 100%;
+    height: 140vh;
+    background-image: url("images/nirmolak-header.png");
+    background-position: center;
+    background-size: contain; /* This will make the image fit within the header, showing the whole image */
+    background-repeat: no-repeat;
+    /* margin-bottom: -250px; */
+}
+.container{
+    padding: 10px 5%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 100px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #F99136; 
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px; 
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 20px
+}
+.header-text h1 span{
+    color: #F99136;
+}
+
+
+
+/* -------------------------------features------------------------------- */
+
+#features { 
+
+}
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: #E6F4F1;
+    margin-top: 0;
+}
+.services-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 10px;
+}
+
+.services-list div {
+    height: 600px; /* Fixed height for each video container */
+    display: flex;
+    align-items: center; /* Centers the video vertically */
+    justify-content: center; /* Centers the video horizontally */
+    overflow: hidden; /* Ensures no part of the video overflows the container */
+}
+
+.services-list video {
+    width: 100%; /* Ensures the video can scale up to the full width of the container */
+    height: 100%; /* Ensures the video can scale up to the full height of the container */
+    object-fit: contain; /* Ensures the entire video is visible, scaled to fit within the container */
+}
+
+/* -----------------------------contact-------------------------- */
+.contact-left{
+    flex-basis: 35%;
+}
+
+
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #F99136;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #F99136;
+    transform: translateY(-5px);
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #96AFB8;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/* -------------------------css for small screens--------------------------- */
+
+nav .fa-solid{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url("images/nirmolak-header.png");
+        
+    }
+    .logo{
+        width: 100px;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #F99136;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title{
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2{
+        flex-basis: 100%
+    }
+    .about-col-1{
+        margin-bottom: 30px;
+    }
+    .about-col-2{
+        font-size: 14px;
+    }
+    .tab-links{
+        font-size: 16px;
+        margin-right: 20px;
+    }
+
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+}
+

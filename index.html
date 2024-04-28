@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nirmolak Heera</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/images/nirmolak-logo.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8c66445ed1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/nirmolak-icon.png" class="logo" alt="Nirmolak Logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#privacy-policy">Privacy Policy</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+       
+    </div>
+</div>
+
+<div id="features">
+    <div class="container">
+        <h1 class="sub-title">Features.</h1>
+        <div class="services-list">
+            <div>
+                <video loop autoplay muted>
+                    <source src="images/bookmarks-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div>
+                <video loop autoplay muted>
+                    <source src="images/linked-shabads-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div>
+                <video loop autoplay muted>
+                    <source src="images/session-tabs-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="privacy-policy">
+    <div class="container">
+        <h1 class="sub-title">Privacy Policy.</h1>
+        <p>Last updated: [27/04/2024]<br><br>
+
+            Nirmolak Heera collects zero user data and hence does not involve itself in the usage, collection or selling of user data in any manner.<br><br>
+            Nirmolak Heera is a community app and hopes to provide a better Gurbani Search and Keertan experience!
+            
+            </p>
+
+    </div>
+</div>
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact.</h1>
+                <p><i class="fa-solid fa-envelope"></i>support@nirmolakheera.app</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/people/Nirmolak-Heera/61557835091299/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/nirmolakheera.app/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="copyright">
+                <p>Copyright Ⓒ Nirmolak Heera App.</p>
+            </div>
+
+            <script>
+
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+            
+                function opentab(tabname) {
+                    for(tablink of tablinks) {
+                        tablink.classList.remove("active-link");
+                    }
+                    for(tabcontent of tabcontents) {
+                        tabcontent.classList.remove("active-tab");
+                    }
+                    event.currentTarget.classList.add("active-link")
+                    document.getElementById(tabname).classList.add("active-tab")
+                }
+            
+            </script>
+            
+            <script>
+                var sidemenu = document.getElementById("sidemenu");
+            
+                function openmenu() {
+                    sidemenu.style.right = "0";
+                }
+                function closemenu() {
+                    sidemenu.style.right = "-200px"
+                }
+            </script>
