@@ -180,13 +180,11 @@ hr.rounded {
 
 /* -------------------------css for small screens--------------------------- */
 
-nav .fa-solid{
-    display: none;
-}
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url("images/nirmolak-header.png");
-        
+        width: 100%;
+        background: linear-gradient(to right, #33465A 0%, #33465A 56.1%, #E6F4F1 56.1%, #E6F4F1 100%);
+        margin-bottom: 50px;
     }
     .logo{
         width: 100px;
@@ -194,6 +192,7 @@ nav .fa-solid{
     nav .fa-solid{
         display: block;
         font-size: 25px;
+        justify-content: end;
     }
     nav ul{
         background: #F99136;
